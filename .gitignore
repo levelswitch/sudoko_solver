@@ -1,6 +1,6 @@
 # Temporary files
-*~
-*#
+*.*~
+*.*#
 # Other files and folders
 .settings/
 
