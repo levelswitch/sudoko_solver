@@ -1,1 +1,74 @@
-Test!
+<html>
+  <head>
+    <title>
+      Sudoko Solver
+    </title>
+    
+    <style>
+      body {
+      float: left;
+      }
+      canvas {
+      float: left;
+      position: relative;
+      display: block;
+      border-style: solid;
+      width: 400px;
+      height: 300px;
+      }
+      video {
+      display: none;
+      }
+      input {
+      width: 50px;
+      height: 40px;
+      display: block;
+      position: relative;
+      float: left;
+      }
+
+      #data_table {
+      padding: 100px;
+      display: table;
+      width: 150px;
+      }
+      .clearfix {
+      overflow: hidden;
+      }
+      
+    </style>
+    <script src="../javascript/solver.js">
+    </script>
+  </head>
+  <body onload="onLoad()">   
+    <video autoplay="false" id="videoElement" width="400" height="300">
+     
+    </video>
+
+    <canvas id="canvas_one" width="400" height="300">
+    </canvas>
+
+    <canvas id="canvas_two" width="400" height="300">
+    </canvas>
+
+    <canvas id="canvas_three" width="400" height="300">
+    </canvas>
+
+    <div id="data_table">
+      <input type="number" value="1" step="0.2"/>
+      <input type="number" value="1" step="0.2"/>
+      <input type="number" value="1" step="0.2"/>
+      <input type="number" value="1" step="0.2"/>
+      <input type="number" value="1" step="0.2"/>
+      <input type="number" value="1" step="0.2"/>
+      <input type="number" value="1" step="0.2"/>
+      <input type="number" value="1" step="0.2"/>
+      <input type="number" value="1" step="0.2"/>
+      <input type="button" onclick="kernel_submit()" value="submit" />
+      <input type="button" onclick="reset()" value="reset" />
+    </div>
+    
+
+    
+  </body>
+</html>
